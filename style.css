@@ -1,0 +1,88 @@
+body {
+  background-color: #FFF9C4;
+  color: #1A1A4B;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo { font-weight: bold; font-size: 20px; }
+
+#menu { display: flex; gap: 15px; }
+#menu a { text-decoration: none; color: #1A1A4B; }
+
+#menuBtn { display: none; background: none; border: none; cursor: pointer; }
+#menuBtn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #1A1A4B;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+#themeBtn {
+  background: #1A1A4B;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+section { padding: 40px 20px; max-width: 800px; margin: 0 auto; }
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+
+.yellow-btn {
+  background: #FDE047;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.insta-btn {
+  display: inline-block;
+  background: #E1306C;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.cards { display: flex; gap: 15px; flex-wrap: wrap; }
+.card { background: white; padding: 20px; border-radius: 10px; flex: 1; }
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+img { max-width: 100%; border-radius: 10px; }
+
+/* ТЕМНАЯ ТЕМА - когда у body есть класс dark */
+body.dark { background: #1A1A4B; color: white; }
+body.dark header { background: #2A2A5E; }
+body.dark .card { background: #2A2A5E; color: white; }
+body.dark #menu a { color: white; }
+body.dark #menuBtn span { background: white; }
+body.dark #themeBtn { background: #FDE047; color: black; }
+
+@media (max-width: 600px) {
+  #menuBtn { display: block; }
+  #menu { display: none; flex-direction: column; }
+  #menu.show { display: flex; }
+}

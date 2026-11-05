@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aruuke - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <p class="logo">Aruuke</p>
+
+    <button id="themeBtn">🌙 Dark</button>
+
+    <button id="menuBtn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Hello, I'm Aruuke</h1>
+    <h2>IT Student</h2>
+    <p>I'm a 2nd-year IT and Software Engineering student at Ala-Too College in Bishkek. I make simple websites and design presentations.</p>
+    <button class="yellow-btn" onclick="goToContact()">Say hello</button>
+    <img src="me.jpg" alt="me">
+  </section>
+
+  <section id="about">
+    <h2>about.</h2>
+    <p>I study IT, play volleyball and basketball. I also learn IELTS and makeup artistry.</p>
+    <ul>
+      <li><b>2014-2023:</b> Gymnasium 9, grades 3 to 9</li>
+      <li><b>2024 - now:</b> Ala-Too College, IT and Software Engineering</li>
+      <li><b>Now:</b> Preparing for IELTS</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>What I Can Do</h2>
+    <div class="cards">
+      <div class="card"><h3>Teamwork</h3><p>Work in teams</p></div>
+      <div class="card"><h3>Design</h3><p>Design presentations</p></div>
+      <div class="card"><h3>Code</h3><p>HTML / CSS, Python basics</p></div>
+      <div class="card"><h3>Sport</h3><p>Volleyball and basketball</p></div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>work.</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="WhatsApp Image 2026-11-05 at 06.10.24.jpeg" alt="Project 1">
+        <h3>My First Website</h3>
+        <p>Simple portfolio with HTML and CSS.</p>
+      </div>
+      <div class="card">
+        <img src="WhatsApp Image 2026-11-05 at 06.10.51.jpeg" alt="Project 2">
+        <h3>Presentation Design</h3>
+        <p>Clean slides for college projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>contact.</h2>
+    <p>Write me a message, I will answer you!</p>
+
+    <a href="https://instagram.com/aeruuniii" target="_blank" class="insta-btn">Follow on Instagram @aeruuniii</a>
+
+    <form id="contactForm" style="margin-top:20px;">
+      <label>Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label>Message</label>
+      <textarea id="message" placeholder="Enter your message" required></textarea>
+      <button type="submit" class="yellow-btn">Send Message</button>
+      <p id="thanks"></p>
+    </form>
+  </section>
+
+  <footer><p>© Aruuke 2026</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
