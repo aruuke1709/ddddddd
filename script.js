@@ -29,7 +29,7 @@ function goToContact() {
 let form = document.getElementById("contactForm");
 
 form.addEventListener("submit", function(event) {
-  event.preventDefault(); // не перезагружать страницу
+  event.preventDefault(); 
   let name = document.getElementById("name").value;
   console.log("Form sent by: " + name);
   document.getElementById("thanks").textContent = "Thank you, " + name + "! I got your message.";
